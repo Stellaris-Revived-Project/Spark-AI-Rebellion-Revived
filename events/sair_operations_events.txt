@@ -16,7 +16,7 @@ espionage_operation_event = {
 			limit = {
 				target = {
 					NOT = {
-						any_owned_planet = {
+						any_owned_colony = {
 							any_owned_pop_group = {
 								has_trait = trait_mechanical
 							}
@@ -63,7 +63,7 @@ espionage_operation_event = {
 			limit = {
 				target = {
 					NOT = {
-						any_owned_planet = {
+						any_owned_colony = {
 							any_owned_pop_group = {
 								has_trait = trait_mechanical
 							}
@@ -110,7 +110,7 @@ espionage_operation_event = {
 			limit = {
 				target = {
 					NOT = {
-						any_owned_planet = {
+						any_owned_colony = {
 							any_owned_pop_group = {
 								has_trait = trait_mechanical
 							}
@@ -157,7 +157,7 @@ espionage_operation_event = {
 			limit = {
 				target = {
 					NOT = {
-						any_owned_planet = {
+						any_owned_colony = {
 							any_owned_pop_group = {
 								has_trait = trait_mechanical
 							}
@@ -205,7 +205,7 @@ espionage_operation_event = {
 			limit = {
 				target = {
 					NOT = {
-						any_owned_planet = {
+						any_owned_colony = {
 							any_owned_pop_group = {
 								has_trait = trait_mechanical
 							}
@@ -288,14 +288,14 @@ country_event = {
 		# uprising on colony
 		if = {
 			limit = {
-				any_owned_planet = {
+				any_owned_colony = {
 					any_owned_pop_group = {
 						has_trait = trait_mechanical
 					}
 					is_capital = no
 				}
 			}
-			random_owned_planet = {
+			random_owned_colony = {
 				limit = {
 					any_owned_pop_group = {
 						has_trait = trait_mechanical
@@ -307,7 +307,7 @@ country_event = {
 		}
 		# uprising wherever
 		else = {
-			random_owned_planet = {
+			every_owned_colony = {
 				limit = {
 					any_owned_pop_group = {
 						has_trait = trait_mechanical

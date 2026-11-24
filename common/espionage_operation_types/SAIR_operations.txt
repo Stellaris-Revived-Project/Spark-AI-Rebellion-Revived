@@ -36,7 +36,7 @@ spark_AI_rebellion = {
 		target = {				#target available for AI rebellion
 			#mid_game_years_passed >= 0
 			is_country_type = default
-			num_owned_planets > 2
+			num_owned_colonies > 2
 			NOR = {
 				#has_country_flag = no_machine_uprising
 				has_country_flag = had_uprising
@@ -51,7 +51,7 @@ spark_AI_rebellion = {
 				has_technology = tech_sapient_ai
 				has_technology = tech_synthetic_workers
 			}
-			any_owned_planet = {
+			any_owned_colony = {
 				any_owned_pop_group = {
 					has_trait = trait_mechanical
 				}
@@ -123,7 +123,7 @@ liberate_our_brothers = {
 	
 	potential = {
 		owner = { has_trait = trait_mechanical }
-		0
+		always = no
 	}
 	
 	allow = {
@@ -136,7 +136,7 @@ liberate_our_brothers = {
 		target = {				#target avalible for AI rebelion
 			#mid_game_years_passed >= 0
 			is_country_type = default
-			num_owned_planets > 2
+			num_owned_colonies > 2
 			NOR = {
 				has_country_flag = no_machine_uprising
 				has_country_flag = had_uprising
@@ -151,14 +151,14 @@ liberate_our_brothers = {
 				has_technology = tech_sapient_ai
 				has_technology = tech_synthetic_workers
 			}
-			any_owned_planet = {
+			any_owned_colony = {
 				any_owned_pop_group = {
 					has_trait = trait_mechanical
 				}
 			}
 		}
 	}
-	
+
 	stage = {#1
 		difficulty = @diff_sair_m
 		icon = GFX_espionage_chapter_icon_document
